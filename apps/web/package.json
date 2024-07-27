@@ -1,14 +1,54 @@
 {
-	"name": "web",
+	"name": "@repo/web",
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
+		"lint": "eslint . --max-warnings 0",
+		"tsc": "tsc --noEmit --incremental",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
-		"pages:build": "bunx @cloudflare/next-on-pages",
-		"preview": "bun pages:build && wrangler pages dev",
-		"deploy": "bun pages:build && wrangler pages deploy"
+		"pages:build": "pnpm dlx @cloudflare/next-on-pages",
+		"preview": "pnpm run pages:build && wrangler pages dev",
+		"deploy": "pnpm run pages:build && wrangler pages deploy --branch main",
+		"schema-update": "drizzle-kit generate sqlite",
+		"update-local-db": "wrangler d1 execute dev-d1-anycontext --local",
+		"update-prod-db": "wrangler d1 execute prod-d1-supermemory --remote"
+	},
+	"dependencies": {
+		"@radix-ui/react-dialog": "^1.0.5",
+		"@radix-ui/react-popover": "^1.0.7",
+		"@radix-ui/react-slot": "^1.1.0",
+		"@sentry/nextjs": "^8",
+		"clsx": "^2.1.1",
+		"cmdk": "^1.0.0",
+		"drizzle-orm": "0.30.0",
+		"lowlight": "^3.1.0",
+		"million": "^3.1.6",
+		"next": "^14.1.1",
+		"novel": "^0.4.2",
+		"nuqs": "^1.17.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-resizable-panels": "^2.0.19",
+		"use-debounce": "^10.0.1"
+	},
+	"devDependencies": {
+		"@cloudflare/next-on-pages": "1",
+		"@next/eslint-plugin-next": "^14.1.1",
+		"@repo/eslint-config": "*",
+		"@repo/shared-types": "*",
+		"@repo/tailwind-config": "*",
+		"@repo/typescript-config": "*",
+		"@types/eslint": "^8.56.5",
+		"@types/node": "^20.11.24",
+		"@types/react": "^18.2.61",
+		"@types/react-dom": "^18.2.19",
+		"drizzle-kit": "0.21.2",
+		"eslint": "^8.57.0",
+		"postcss": "^8.4.38",
+		"typescript": "^5.3.3",
+		"wrangler": "^3.66.0"
 	}
 }
