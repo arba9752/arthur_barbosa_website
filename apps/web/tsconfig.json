@@ -5,21 +5,14 @@
 			{
 				"name": "next"
 			}
-		],
-		"paths": {
-			"@/*": ["./*"]
-		}
+		]
 	},
 	"include": [
-		"cf-env.d.ts",
-		"env.d.ts",
+		"next-env.d.ts",
 		"next.config.mjs",
 		"**/*.ts",
 		"**/*.tsx",
-		".next/types/**/*.ts",
-		"../../packages/ui/",
-		"../../packages/shared-types",
-		"./components"
+		".next/types/**/*.ts"
 	],
-	"exclude": ["node_modules/"]
+	"exclude": ["node_modules"]
 }
