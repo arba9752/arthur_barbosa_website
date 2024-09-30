@@ -60,32 +60,10 @@ function Hero() {
 				</motion.p>
 
 				<TwitterBorder />
-
 				
 			</section>
 			<br />
 			<AnimatedLogoCloud />
-			<div className="relative z-50">
-				<motion.img
-					{...{
-						...slap,
-						transition: { ...slap.transition, delay: 0.35 },
-					}}
-					src="/images/landing-hero.jpeg"
-					alt="Landing page background"
-					width={1512}
-					height={1405}
-					draggable="false"
-					className="z-40 md:mt-[-40px] hidden sm:block h-full max-w-[70vw] mx-auto md:w-full select-none px-5 !rounded-2xl"
-					style={{
-						borderRadius: "20px",
-					}}
-				/>
-				<div
-					className="absolute -z-10 left-0 top-[10%] h-32 w-[90%] overflow-x-hidden bg-[rgb(54,157,253)] bg-opacity-100  blur-[337.4px]"
-					style={{ transform: "rotate(-30deg)" }}
-				/>
-			</div>
 		</>
 	);
 }

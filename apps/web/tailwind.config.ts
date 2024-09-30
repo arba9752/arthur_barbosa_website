@@ -15,7 +15,7 @@ module.exports = {
 				},
 			},
             animation: {
-                'logo-cloud': 'logo-cloud 30s linear infinite',
+                'logo-cloud': 'logo-cloud 22s linear infinite',
               },
               keyframes: {
                 'logo-cloud': {
