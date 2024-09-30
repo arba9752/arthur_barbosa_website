@@ -8,7 +8,7 @@ import LinkArrow from "./linkArrow";
 
 export function TwitterBorder() {
 	return (
-		<a href="https://x.com/supermemoryai" target="_blank">
+		<a href="https://x.com/thoughtbird_" target="_blank">
 			<HoverBorderGradient
 				containerClassName="rounded-full"
 				className="group/anchor z-20 pl-10 pr- flex items-center justify-center gap-4 rounded-full text-white/80 bg-white/5 py-2 text-sm"

@@ -2,29 +2,33 @@
 
 import { motion } from "framer-motion";
 import {
-	Github,
-	Medium,
+	React,
+	TailwindIcon,
 	Notion,
 	Reddit,
-	Twitter,
+	NextJSLogo,
+	Cloudflare,
+	TurboRepo,
 } from "@repo/ui/components/icons";
 import Image from "next/image";
 
 const icons = [
-	<div className="rounded-full bg-purple-600/20 p-4">
-		<Github className="h-8 w-8 text-purple-500" />
+	<div className="rounded-full bg-blue-300/20 p-4">
+		<React className="h-8 w-8 text-blue-400" />
 	</div>,
-	<div className="rounded-full bg-blue-800/20 p-4">
-		<Twitter className="h-8 w-8 text-blue-500" />
+	<div className="rounded-full bg-white/85 p-4">
+    	<NextJSLogo className="h-8 w-8 text-black" />
+	</div>
+	,
+	<div className="rounded-full bg-blue-200/30 p-4">
+		<TailwindIcon className="h-8 w-8 text-white" />
 	</div>,
-	<div className="rounded-full bg-green-800/20 p-4">
-		<Medium className="h-8 w-8 text-green-500" />
-	</div>,
-	<div className="rounded-full bg-red-800/20 p-4">
-		<Reddit className="h-8 w-8 text-red-500" />
-	</div>,
-	<div className="rounded-full bg-white/20 p-4">
-		<Notion className="h-8 w-8 text-white" />
+	<div className="rounded-full bg-orange-600/90 p-0">
+		<Cloudflare className="h-16 w-16 text-orange" />
+	</div>
+	,
+	<div className="rounded-full bg-[#f0f0f0] p-4 flex items-center justify-center">
+		<TurboRepo className="h-8 w-8" />
 	</div>,
 ];
 
@@ -37,9 +41,9 @@ const RotatingIcons: React.FC = () => {
 				}}
 				className="text-center max-w-2xl  mx-auto bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]  bg-clip-text text-4xl tracking-tighter   text-transparent md:text-5xl lg:text-6xl"
 			>
-				Collect data from{" "}
-				<span className="bg-gradient-to-r from-zinc-300 to-blue-200 bg-clip-text text-transparent">
-					any website on the internet
+				This website was built with these{" "}
+				<span className="bg-gradient-to-r from-zinc-300 to-purple-400 bg-clip-text text-transparent">
+					modern web technolgies
 				</span>
 			</motion.h1>
 			<div className="flex items-center justify-center">
@@ -91,8 +95,13 @@ const RotatingIcons: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<p className="text-center text-sm text-zinc-500">
-				... and bring it into your second brain
+			<p className="text-center text-sm text-zinc-500   md:text-2xl lg:text-3xl">
+			React-based Next.js for frontend <br />
+			TailwindCSS for styling<br />
+			Cloudflare Pages for hosting<br />
+			Turborepo for monorepo management<br />
+			Biome for formatting and linting<br />
+			ShadcnUI as the component library<br />
 			</p>
 		</div>
 	);

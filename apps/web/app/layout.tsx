@@ -12,9 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-	title: "Supermemory - Your personal second brain.",
+	title: "Arthur's Site",
 	description:
-		"Bring saved information from all over the internet into one place where you can connect it, and ask AI about it",
+		"Au",
 	openGraph: {
 		images: [
 			{

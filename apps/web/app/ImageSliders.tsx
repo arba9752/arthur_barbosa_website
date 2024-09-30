@@ -174,7 +174,7 @@ const logos = [
 
 const AnimatedLogoCloud = () => {
 	return (
-		<div className="py-2 max-w-4xl scale-75">
+		<div className="py-2 max-w-4xl scale-130">
 			<p className="font-normal tracking-tighter text-base text-gray-100 bg-gradient-to-br from-zinc-400 via-zinc-300 to-zinc-700 bg-clip-text text-transparent text-center mt-4">
 				Works perfectly with the apps you love.
 			</p>
@@ -208,5 +208,6 @@ const AnimatedLogoCloud = () => {
 		</div>
 	);
 };
+
 
 export default AnimatedLogoCloud;
