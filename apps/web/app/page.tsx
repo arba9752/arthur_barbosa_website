@@ -52,6 +52,7 @@ export default async function Home() {
 				<Hero />
 				<Showcases />
 				<Services />
+				
 
 				{/* Features section */}
 				<Features />

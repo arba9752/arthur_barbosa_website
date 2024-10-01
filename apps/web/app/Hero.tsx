@@ -9,6 +9,7 @@ import AnimatedLogoCloud from "./ImageSliders";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import YearsActiveCounter from './YearsActiveCounter';
+import SplineEmbed from "./SplineEmbed"
 
 const slap = {
 	initial: {
@@ -62,7 +63,13 @@ function Hero() {
 				
 			</section>
 			<br />
-			<AnimatedLogoCloud />
+		
+				
+				<SplineEmbed />
+				
+		
+				<AnimatedLogoCloud />
+		
 		</>
 	);
 }
