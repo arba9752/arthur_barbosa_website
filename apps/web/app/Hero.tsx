@@ -51,12 +51,11 @@ function Hero() {
 						...slap,
 						transition: { ...slap.transition, delay: 0.3 },
 					}}
-					className="text-lg text-center font-semibold text-[rgb(245,245,245)]"
+					className="text-lg text-center font-medium text-[rgb(245,245,245)]"
 				>
 					I've been alive for{' '}
 					<YearsActiveCounter /> 
-					years. Your curated space for insightful tweets, capturing the essence of thought and conversation. 
-					Explore a rich tapestry of ideas, perspectives, and perspectives that challenge, inspire, and enlighten. 
+					years. I'm interested in New Grad Software Engineer, App Developer, Data Scientist, and Web Developer roles for May 2025.
 				</motion.p>
 
 				<TwitterBorder />
