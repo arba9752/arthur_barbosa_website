@@ -3,20 +3,20 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { motion } from "framer-motion";
 import { cn } from "@repo/ui/lib/utils";
-import { Twitter } from "@repo/ui/components/icons";
+import { LinkedinLogo } from "@repo/ui/components/icons";
 import LinkArrow from "./linkArrow";
 
-export function TwitterBorder() {
+export function LinkedinBorder() {
 	return (
-		<a href="https://x.com/thoughtbird_" target="_blank">
+		<a href="https://www.linkedin.com/in/arthur-barbosa-dev/_" target="_blank">
 			<HoverBorderGradient
 				containerClassName="rounded-full"
 				className="group/anchor z-20 pl-10 pr- flex items-center justify-center gap-4 rounded-full text-white/80 bg-white/5 py-2 text-sm"
 			>
-				<Twitter className="h-4 w-4" />
+				<LinkedinLogo className="h-4 w-4" />
 				<div className="flex items-center justify-center">
 					{" "}
-					Follow us on Twitter{" "}
+					Let's connect on LinkedIn{" "}
 					<LinkArrow
 						classname="group-hover/anchor:opacity-100 opacity-0 transition"
 						stroke="#ffffff"

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Twitter } from "@repo/ui/components/icons";
 import EmailInput from "./EmailInput";
 import LinkArrow from "./linkArrow";
-import { TwitterBorder } from "./twitterLink";
+import { LinkedinBorder } from "./twitterLink";
 import AnimatedLogoCloud from "./ImageSliders";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
@@ -62,17 +62,15 @@ function Hero() {
             className="text-lg text-center font-medium text-[rgb(245,245,245)]"
           >
             I've been alive for <YearsActiveCounter /> years. I'm interested in
-            New Grad Software Engineer, App Developer, Data Scientist, and Web
-            Developer roles for May 2025.
+            New Grad Software Engineer, Product Manager, App Developer, Data Scientist, and Web
+            Developer roles for May 2025 onwards.
           </motion.p>
 
-          <TwitterBorder />
+          <LinkedinBorder />
         </div>
       </section>
 
       <br />
-
-      {/* Other components */}
       <AnimatedLogoCloud />
     </>
   );
