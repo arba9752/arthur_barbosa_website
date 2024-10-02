@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import {
 	React,
 	TailwindIcon,
@@ -10,6 +11,8 @@ import {
 	Cloudflare,
 	TurboRepo,
 } from "@repo/ui/components/icons";
+
+import ab_logo_white from "../public/images/ab_logo_white.webp";
 import Image from "next/image";
 
 const icons = [
@@ -17,7 +20,7 @@ const icons = [
 		<React className="h-8 w-8 text-blue-400" />
 	</div>,
 	<div className="rounded-full bg-white/85 p-4">
-    	<NextJSLogo className="h-8 w-8 text-black" />
+		<NextJSLogo className="h-8 w-8 text-black" />
 	</div>
 	,
 	<div className="rounded-full bg-blue-200/30 p-4">
@@ -33,8 +36,14 @@ const icons = [
 ];
 
 const RotatingIcons: React.FC = () => {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true }); // Trigger once when it's in view
+
 	return (
-		<div className="relative flex w-full flex-col items-center justify-center gap-8 px-4 sm:px-6 mt-10">
+		<div
+			ref={ref}
+			className="relative flex w-full flex-col items-center justify-center gap-8 px-4 sm:px-6 mt-10"
+		>
 			<motion.h1
 				{...{
 					transition: { delay: 0.2 },
@@ -43,7 +52,7 @@ const RotatingIcons: React.FC = () => {
 			>
 				This website was built with these{" "}
 				<span className="bg-gradient-to-r from-zinc-300 to-purple-400 bg-clip-text text-transparent">
-					modern web technolgies
+					modern web technologies
 				</span>
 			</motion.h1>
 			<div className="flex items-center justify-center">
@@ -57,9 +66,7 @@ const RotatingIcons: React.FC = () => {
 									originX: "200px",
 									originY: "-8px",
 								}}
-								animate={{
-									rotate: [0, 360],
-								}}
+								animate={isInView ? { rotate: [0, 360] } : {}} // Only animate when in view
 								transition={{
 									repeat: Infinity,
 									duration: 5,
@@ -71,9 +78,7 @@ const RotatingIcons: React.FC = () => {
 									style={{
 										rotate: index * 72,
 									}}
-									animate={{
-										rotate: [0, -360],
-									}}
+									animate={isInView ? { rotate: [0, -360] } : {}} // Only animate when in view
 									transition={{
 										repeat: Infinity,
 										duration: 5,
@@ -86,22 +91,22 @@ const RotatingIcons: React.FC = () => {
 							</motion.div>
 						))}
 						<Image
-							src="/logo.svg"
-							alt="Supermemory logo"
-							width={80}
-							height={80}
+							src={ab_logo_white}
+							alt="ab_logo"
+							width={75}
+							height={75}
 							className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white"
 						/>
 					</div>
 				</div>
 			</div>
 			<p className="text-center text-sm text-zinc-500   md:text-2xl lg:text-3xl">
-			React-based Next.js for frontend <br />
-			TailwindCSS for styling<br />
-			Cloudflare Pages for hosting<br />
-			Turborepo for monorepo management<br />
-			Biome for formatting and linting<br />
-			ShadcnUI as the component library<br />
+				React-based Next.js for frontend <br />
+				TailwindCSS for styling<br />
+				Cloudflare Pages for hosting<br />
+				Turborepo for monorepo management<br />
+				Biome for formatting and linting<br />
+				ShadcnUI as the component library<br />
 			</p>
 		</div>
 	);

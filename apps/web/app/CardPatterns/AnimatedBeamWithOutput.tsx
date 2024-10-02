@@ -2,7 +2,7 @@
 import { cn } from "@repo/ui/lib/utils";
 import { AnimatedBeam } from "./AnimatedBeam";
 import React, { forwardRef, useRef } from "react";
-import Logo from "../../public/logo.svg";
+import ab_logo_white from "../../public/images/ab_logo_white.webp";
 import Image from "next/image";
 const Circle = forwardRef<
 	HTMLDivElement,
@@ -54,7 +54,7 @@ export function AnimatedBeamShow() {
 						className="w-16 h-16 bg-page-gradient bg-slate-900 border border-white/20 [box-shadow:0_-20px_80px_-20px_#8686f01f_inset]"
 					>
 						<Image
-							src={Logo}
+							src={ab_logo_white}
 							className="text-black w-full h-full"
 							alt="logo image"
 						/>
