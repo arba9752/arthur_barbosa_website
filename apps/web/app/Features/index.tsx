@@ -58,22 +58,6 @@ const Services = () => {
 						</div>
 					</div>
 
-					<div className="overflow-hidden relative rounded-3xl border max-h-[20rem] min-h-[40rem] md:min-h-[33rem] bg-hero-gradient bg-slate-950/10 border-white/10 w-full">
-						<div className="absolute inset-0">
-							<AnimatedBeamShow />
-						</div>
-
-						<div className="flex absolute inset-0 flex-col justify-end items-start p-8 pl-10 mt-4 lg:-mt-20 translate-y-10 md:translate-y-0 bg-glass-gradient">
-							<h4 className="text-3xl tracking-tight mb-2 text-center text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
-								Bringing content in is easy.
-							</h4>
-							<p className="max-w-lg text-lg font-normal tracking-tighter text-gray-400 mb-[3rem]">
-								You can use our chrome extension, iOS shortcut, or our API to
-								send content to supermemory.
-							</p>
-						</div>
-					</div>
-
 					<Gradient />
 				</div>
 			</div>
