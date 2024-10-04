@@ -42,7 +42,7 @@ const OpenSource = () => {
                   Open Source
                 </h4>
                 <p className="text-lg body-2 mb-[3rem] text-white/80">
-                  You don't even need to trust me. See for yourself how this website was made.
+                    See for yourself how this website was made.
                 </p>
                 <div
                   className="inline-flex gap-x-1 justify-center items-center py-4 px-10 text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto w-fit mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10 text-white/80"

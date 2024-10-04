@@ -36,9 +36,7 @@ export default async function Home() {
 				</div>
 
 				<Hero />
-				<Projects />
-				{/* <Showcases /> */}
-				
+				<Projects /> 				
 				<RotatingIcons />
 				<OpenSource/>
 				
