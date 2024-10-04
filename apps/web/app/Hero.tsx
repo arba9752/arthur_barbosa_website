@@ -58,9 +58,7 @@ function Hero() {
             }}
             className="text-lg text-center font-medium text-[rgb(245,245,245)]"
           >
-            I've been alive for <YearsActiveCounter /> years. Originally from Brazil, I am currently studying Computer Science with a Business Minor at CU Boulder. I'm interested in
-            New Grad Software Engineer, Product Manager, App Developer, Data Scientist, and Web
-            Developer roles for May 2025 onwards.
+            I've been alive for <YearsActiveCounter /> years. I am currently studying Computer Science with a Business Minor at CU Boulder. I am seeking full-time opportunities for May 2025 and beyond in roles such as Software Engineer, Product Manager, App Developer, Data Scientist, and Web Developer.
           </motion.p>
 
           <LinkedinBorder />

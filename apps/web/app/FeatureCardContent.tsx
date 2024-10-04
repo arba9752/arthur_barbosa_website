@@ -19,7 +19,7 @@ export default function FUIFeatureSectionWithCards() {
       icon: <JavaLogo className="w-5 h-5" />,
       title: "Java-based Arcane Game",
       desc: "Dungeons and Dragons game, leveraging object-oriented programming principles to enhance system scalability. Applied TDD and achieved 100% class coverage and 80% method coverage",
-      link: "https://example.com/java-arcane-game", // Placeholder link
+      link: "https://github.com/CSCI-4448-5448-OOAD-Spring2024/java-arcane-game", 
     },
     {
       icon: <AstroLogo className="w-5 h-5" />,
