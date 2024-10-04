@@ -45,7 +45,7 @@ function Hero() {
             className="text-center mx-auto bg-[linear-gradient(180deg,#FFF_0%,rgba(255,255,255,0)_202.08%)] bg-clip-text text-4xl tracking-tighter sm:text-5xl text-transparent md:text-6xl lg:text-7xl"
           >
             I am{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-purple-200 from-zinc-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-purple-300 from-zinc-300">
               Arthur Barbosa,
             </span>{" "}
             a{" "}

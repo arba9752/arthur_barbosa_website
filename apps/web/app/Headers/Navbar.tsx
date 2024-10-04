@@ -39,13 +39,13 @@ const SlideTabs = () => {
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
-				<Link className="w-full h-full" href={"/#use-cases"}>
-					Use Cases
+				<Link className="w-full h-full" href={"/#features"}>
+					Projects
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
-				<Link className="w-full h-full" href={"/#features"}>
-					Projects
+				<Link className="w-full h-full" href={"/#use-cases"}>
+					Tools
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
@@ -53,7 +53,7 @@ const SlideTabs = () => {
 					className="w-full h-full"
 					href={"https://github.com/Dhravya/supermemory/graphs/contributors"}
 				>
-					Team
+					Resume
 				</Link>
 			</Tab>
 
