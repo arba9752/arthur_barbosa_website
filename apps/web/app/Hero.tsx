@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Twitter } from "@repo/ui/components/icons";
-import EmailInput from "./EmailInput";
-import LinkArrow from "./linkArrow";
 import { LinkedinBorder } from "./twitterLink";
 import AnimatedLogoCloud from "./ImageSliders";
 import { ArrowUpRight } from "lucide-react";

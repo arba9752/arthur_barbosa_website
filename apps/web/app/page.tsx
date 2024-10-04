@@ -8,7 +8,7 @@ import Footer from "./footer";
 import { Showcases } from "./Showcase";
 import BackgroundPlus from "./GridPatterns/PlusGrid";
 import { redirect } from "next/navigation";
-
+import OpenSource from "./Features/index"
 export const runtime = "edge";
 
 export default async function Home() {
@@ -37,10 +37,12 @@ export default async function Home() {
 
 				<Hero />
 				<Projects />
-				<Showcases />
+				{/* <Showcases /> */}
+				
 				<RotatingIcons />
-			
-
+				<OpenSource/>
+				
+				
 				<Toaster />
 				<Footer />
 			</main>

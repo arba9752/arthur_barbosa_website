@@ -47,7 +47,6 @@ export default function FUIFeatureSectionWithCards() {
 	return (
 		<section className="relative z-20 pb-14">
 		  <div className="px-4 mx-auto max-w-screen-xl text-gray-400 md:px-8 lg:px-0">
-			{/* ... (rest of your section code) */}
 			<div className="relative z-20 mt-[4rem]">
 			  <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 				{features.map((item, idx) => (
