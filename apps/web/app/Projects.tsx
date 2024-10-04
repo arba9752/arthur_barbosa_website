@@ -24,7 +24,7 @@ export default function Projects() {
 
 	return (
 		<section
-			id="features"
+			id="projects"
 			className="overflow-hidden relative w-full max-lg:after:hidden mt-10 pb-8 pt-10 "
 		>
 		<img

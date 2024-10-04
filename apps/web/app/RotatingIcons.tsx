@@ -37,6 +37,9 @@ const RotatingIcons: React.FC = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
+    <section
+			id="rotating-icons"
+		>
     <div
       ref={ref}
       className="relative flex w-full flex-col items-center justify-center gap-8 px-4 sm:px-6 mt-0"
@@ -113,6 +116,7 @@ const RotatingIcons: React.FC = () => {
         </p>
       </div>
     </div>
+    </section>
   );
 };
 

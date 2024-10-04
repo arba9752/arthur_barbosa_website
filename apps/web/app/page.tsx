@@ -5,7 +5,6 @@ import { Toaster } from "@repo/ui/shadcn/toaster";
 import Projects from "./Projects";
 import Footer from "./footer";
 // import { auth } from "@/server/auth";
-import { Showcases } from "./Showcase";
 import BackgroundPlus from "./GridPatterns/PlusGrid";
 import { redirect } from "next/navigation";
 import OpenSource from "./Features/index"
@@ -38,6 +37,8 @@ export default async function Home() {
 				<Hero />
 				<Projects /> 				
 				<RotatingIcons />
+
+
 				<OpenSource/>
 				
 				
