@@ -4,7 +4,7 @@ import FUIFeatureSectionWithCards from "./FeatureCardContent";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-export default function Features() {
+export default function Projects() {
 	const [tab, setTab] = useState<number>(0);
 
 	const tabs = useRef<HTMLDivElement>(null);
@@ -47,7 +47,8 @@ export default function Features() {
 							style={{ transform: "rotate(-30deg)" }}
 						/>
 							<Link
-							href="/signin"
+							href="/pdf/Arthur_Barbosa_Resume.pdf"
+							target="_blank" 
 							className="mx-auto flex gap-2 justify-center items-center py-2 px-10 mt-4 text-lg tracking-tighter text-center bg-gradient-to-br rounded-md ring-2 ring-offset-1 transition-all hover:ring-transparent group w-fit font-geist bg-page-gradient text-md from-zinc-400 to-zinc-700 text-zinc-50 ring-zinc-500/50 ring-offset-zinc-950/5 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
 						>
 							Check out my full Resume

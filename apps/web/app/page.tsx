@@ -2,7 +2,7 @@ import RotatingIcons from "./RotatingIcons";
 import Hero from "./Hero";
 import { Navbar } from "./Navbar";
 import { Toaster } from "@repo/ui/shadcn/toaster";
-import Features from "./Features";
+import Projects from "./Projects";
 import Footer from "./footer";
 // import { auth } from "@/server/auth";
 import { Showcases } from "./Showcase";
@@ -35,12 +35,8 @@ export default async function Home() {
 					</div>
 				</div>
 
-				{/* Hero section */}
 				<Hero />
-		
-
-				{/* Features section */}
-				<Features />
+				<Projects />
 				<Showcases />
 				<RotatingIcons />
 			

@@ -51,7 +51,8 @@ const SlideTabs = () => {
 			<Tab setPosition={setPosition}>
 				<Link
 					className="w-full h-full"
-					href={"https://github.com/Dhravya/supermemory/graphs/contributors"}
+					href="/pdf/Arthur_Barbosa_Resume.pdf"
+					target="_blank" 
 				>
 					Resume
 				</Link>
