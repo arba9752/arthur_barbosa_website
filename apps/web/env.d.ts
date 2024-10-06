@@ -10,5 +10,4 @@ interface CloudflareEnv {
 	R2_SECRET_KEY: string;
 	R2_BUCKET_NAME: string;
 	STORAGE: R2Bucket;
-	DATABASE: D1Database;
 }

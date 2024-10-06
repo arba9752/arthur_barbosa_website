@@ -6,7 +6,3 @@ pages_build_output_dir = ".vercel/output/static"
 [placement]
 mode = "smart"
 
-[[d1_databases]]
-binding = "DATABASE"
-database_name = "cloudflare-saas-stack-db"
-database_id = "0c068ec6-a157-4b71-a489-f41c4729fc5d"
