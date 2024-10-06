@@ -51,6 +51,7 @@ export function useUploadFile<T>(key: string, options?: T) {
 						customId: null,
 						key: fileName,
 						serverData: null,
+						appUrl: '',
 					},
 				]);
 
