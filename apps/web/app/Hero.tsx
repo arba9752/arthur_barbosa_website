@@ -41,7 +41,7 @@ function Hero() {
             }}
             className="text-center mx-auto bg-[linear-gradient(180deg,#FFF_0%,rgba(255,255,255,0)_202.08%)] bg-clip-text text-4xl tracking-tighter sm:text-5xl text-transparent md:text-6xl lg:text-7xl"
           >
-            I am{" "}
+            I'm{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-purple-300 from-zinc-300">
               Arthur Barbosa,
             </span>{" "}
@@ -58,7 +58,7 @@ function Hero() {
             }}
             className="text-lg text-center font-medium text-[rgb(245,245,245)]"
           >
-            I've been alive for <YearsActiveCounter /> years. I am currently studying Computer Science with a Business Minor at CU Boulder. I am seeking full-time opportunities for May 2025 and beyond in roles such as Software Engineer, Product Manager, App Developer, Data Scientist, and Web Developer.
+            At <YearsActiveCounter /> years old, currently pursuing a degree in Computer Science with a Business Minor at CU Boulder, I'm looking ahead to full-time opportunities starting in May 2025. Seeking roles such as Software Engineer, Product Manager, App Developer, Data Scientist, and Web Developer, my goal is to contribute and grow in an innovative environment.
           </motion.p>
 
           <LinkedinBorder />
