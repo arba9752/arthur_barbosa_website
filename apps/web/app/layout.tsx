@@ -12,51 +12,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-	title: "Arthur's Site",
+	title: "Arthur Barbosa",
 	description:
-		"Au",
+		"Arthur Barbosa's personal site",
 	openGraph: {
 		images: [
 			{
-				url: "https://supermemory.ai/og-image.png",
+				url: "https://ibb.co/7JkB4LT",
 				width: 1200,
 				height: 627,
-				alt: "Supermemory - Your personal second brain.",
+				alt: "Arthur Barbosa",
 			},
 		],
 	},
-	metadataBase: {
-		host: "https://supermemory.ai",
-		href: "/",
-		origin: "https://supermemory.ai",
-		password: "supermemory",
-		hash: "supermemory",
-		pathname: "/",
-		search: "",
-		username: "supermemoryai",
-		hostname: "supermemory.ai",
-		port: "",
-		protocol: "https:",
-		searchParams: new URLSearchParams(""),
-		toString: () => "https://supermemory.ai/",
-		toJSON: () => "https://supermemory.ai/",
-	},
-	twitter: {
-		card: "summary_large_image",
-		site: "https://supermemory.ai",
-		creator: "https://supermemory.ai",
-		title: "Supermemory - Your personal second brain.",
-		description:
-			"Bring saved information from all over the internet into one place where you can connect it, and ask AI about it",
-		images: [
-			{
-				url: "https://supermemory.ai/og-image.png",
-				width: 1200,
-				height: 627,
-				alt: "Supermemory - Your personal second brain.",
-			},
-		],
-	},
+
 };
 
 export default function RootLayout({
