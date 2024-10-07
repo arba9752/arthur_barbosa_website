@@ -1,6 +1,6 @@
 ## 🚀 Welcome to my website
 
-# Check it out at: 
+### Check it out at: 
 [arthurbarbosa.com](https://arthurbarbosa.com)
 ### The stack includes:
 - [Turborepo](https://turbo.build/) for monorepo management
