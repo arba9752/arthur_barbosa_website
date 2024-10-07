@@ -1,6 +1,6 @@
 ## 🚀 Welcome to my website
 
-# Check it out at: arthurbarbosa.com
+# Check it out at: [arthurbarbosa.com](arthurbarbosa.com)
 ### The stack includes:
 - [Turborepo](https://turbo.build/) for monorepo management
 - [Next.js](https://nextjs.org/) for frontend
