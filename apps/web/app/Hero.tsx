@@ -24,7 +24,7 @@ const slap = {
 function Hero() {
   return (
     <>   
-		<div className="absolute left-0 top-[5%] transform -translate-y-1 z-10 hidden md:block md:w-1/3">
+		<div className="absolute left-0 top-[5%] transform -translate-y-1 z-10 hidden lg:block md:w-1/3">
 			<SplineEmbed />
 		</div>
 
