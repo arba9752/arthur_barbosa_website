@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import FUIFeatureSectionWithCards from "./FeatureCardContent";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-
+import Image from 'next/image';
 export default function Projects() {
 	const [tab, setTab] = useState<number>(0);
 
@@ -27,9 +27,12 @@ export default function Projects() {
 			id="projects"
 			className="overflow-hidden relative w-full max-lg:after:hidden mt-10 pb-8 pt-10 "
 		>
-		<img
-		src="/images/tailwind-bg-gradient.avif"
-		className="absolute top-0 left-0 w-full h-full object-cover opacity-40 z-2"
+		<Image
+			src="/images/tailwind-bg-gradient.avif"
+			alt="Tailwind background gradient"
+			fill
+			style={{ objectFit: 'cover' }}
+			className="absolute top-0 left-0 w-full h-full object-cover opacity-40 z-2"
 		/>
 			<div className="relative ">
 				<div className="flex relative flex-col px-4 mx-auto max-w-screen-xl md:px-0">

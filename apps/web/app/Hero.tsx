@@ -23,21 +23,20 @@ const slap = {
 
 function Hero() {
   return (
-    <>   
-		<div className="absolute left-0 top-[5%] transform -translate-y-1 z-10 hidden lg:block md:w-1/3">
-			<SplineEmbed />
-		</div>
+    <>
+      {/* SplineEmbed for 3D interaction */}
+      <div className="absolute left-0 top-[5%] transform -translate-y-1 z-10 hidden lg:block md:w-1/3">
+        <SplineEmbed />
+      </div>
 
+      {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-center mt-24 md:mt-32 max-w-3xl mx-auto">
-        {/* SplineEmbed on the left, hidden on mobile */}
-     
-
-        {/* Content on the right */}
         <div className="flex flex-col gap-5 justify-center items-center">
+          {/* High-priority h1 */}
           <motion.h1
             {...{
               ...slap,
-              transition: { ...slap.transition, delay: 0.2 },
+              transition: { ...slap.transition }, // No delay
             }}
             className="text-center mx-auto bg-[linear-gradient(180deg,#FFF_0%,rgba(255,255,255,0)_202.08%)] bg-clip-text text-4xl tracking-tighter sm:text-5xl text-transparent md:text-6xl lg:text-7xl"
           >
@@ -51,6 +50,7 @@ function Hero() {
             </span>{" "}
           </motion.h1>
 
+          {/* Supporting paragraph */}
           <motion.p
             {...{
               ...slap,
@@ -58,7 +58,7 @@ function Hero() {
             }}
             className="text-lg text-center font-medium text-[rgb(245,245,245)]"
           >
-            At <YearsActiveCounter /> years old, currently pursuing a degree in Computer Science with a Business Minor at CU Boulder, I'm looking ahead to full-time opportunities starting in May 2025. Seeking roles such as Software Engineer, Product Manager, App Developer, Data Scientist, and Web Developer, my goal is to contribute and grow in an innovative environment.
+           At <YearsActiveCounter /> years old, I am currently pursuing a degree in Computer Science with a Business Minor at CU Boulder. With a strong foundation in software development and a drive for continuous growth, I aim to contribute to impactful projects that push the boundaries of technology.
           </motion.p>
 
           <LinkedinBorder />
