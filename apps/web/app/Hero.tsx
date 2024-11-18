@@ -50,7 +50,6 @@ function Hero() {
             </span>{" "}
           </motion.h1>
 
-          {/* Supporting paragraph */}
           <motion.p
             {...{
               ...slap,
